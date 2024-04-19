@@ -27,3 +27,6 @@ if [ ! -f .gitignore ]; then
     echo "Creating .gitignore..."
     echo -e ".env\npackage-lock.json\npackage.json\nnode_modules\npoll-history.json\nsettings.json\n.idea/" > .gitignore
 fi
+
+# Registering slash commands
+node src/register-commands.js
